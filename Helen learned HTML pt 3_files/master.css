@@ -1,0 +1,25 @@
+
+.monthContainerWhite{
+    float:left; height:150px; 
+    width:150px; 
+    background-color:white; 
+    text-align:center
+}
+.monthContainerGray{
+    float:left; height:150px; 
+    width:150px; 
+    background-color:#f7f4f6; 
+    text-align:center
+}
+
+.monthTitle{
+    font-style:italic;
+    margin: auto;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+.monthTable{
+    font-size:small;
+    width:75%
+}

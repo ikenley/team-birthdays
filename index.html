@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)https://dagdev.advisory.com/team_birthdays/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+    <script src="./Helen learned HTML pt 3_files/jquery.min.js.download"></script>
+    <link href="./Helen learned HTML pt 3_files/master.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./Helen learned HTML pt 3_files/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="./Helen learned HTML pt 3_files/jquery-3.2.1.slim.min.js.download" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="./Helen learned HTML pt 3_files/popper.min.js.download" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="./Helen learned HTML pt 3_files/bootstrap.min.js.download" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./Helen learned HTML pt 3_files/helloWorld.js.download" type="text/javascript"></script>
+    <title>Helen learned HTML pt 3</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center"> Data and Analytics Group (DAG) </h1>
+        <h4 class="text-center"> Birthday Calendar !!!!!!!!!!!!!</h4>
+
+
+        <!-- Button trigger modal -->
+        <div class="row no-gutters justify-content-center">
+            <button type="button" class="btn btn-primary mt-3 mb-1" data-toggle="modal" data-target="#addBirthday">
+                Add new birthday
+            </button>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="addBirthday" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitle">Add a birthday to the calendar!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="inputFirstName">First Name</label>
+                                    <input type="text" class="form-control" id="firstName">
+                                </div>
+                                <div class="col-6">
+                                    <label for="inputLastName">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label>Gender</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gender" id="genderMale" value="Male" checked="">
+                                        <label class="form-check-label" for="genderMale">
+                                            Male
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gender" id="genderFemale" value="Female">
+                                        <label class="form-check-label" for="genderFemale">
+                                            Female
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="inputBirthdayText">Birthday -
+                                        <span class="font-italic">Text</span>
+                                    </label>
+                                    <input type="text" class="form-control" id="firstName" placeholder="mm/dd/yyyy">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label class="form-check-label"> Birthday -
+                                        <span class="font-italic">Manual select</span>
+                                    </label>
+
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary btn-sm mt-2 mb-2 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Month
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="https://dagdev.advisory.com/team_birthdays/#">Action</a>
+                                            <a class="dropdown-item" href="https://dagdev.advisory.com/team_birthdays/#">Another action</a>
+                                            <a class="dropdown-item" href="https://dagdev.advisory.com/team_birthdays/#">Something else here</a>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary btn-sm mt-2 mb-2 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Day
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="https://dagdev.advisory.com/team_birthdays/#">Action</a>
+                                            <a class="dropdown-item" href="https://dagdev.advisory.com/team_birthdays/#">Another action</a>
+                                            <a class="dropdown-item" href="https://dagdev.advisory.com/team_birthdays/#">Something else here</a>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary btn-sm mt-2 mb-2 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Year
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="https://dagdev.advisory.com/team_birthdays/#">Action</a>
+                                            <a class="dropdown-item" href="https://dagdev.advisory.com/team_birthdays/#">Another action</a>
+                                            <a class="dropdown-item" href="https://dagdev.advisory.com/team_birthdays/#">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="inputEmail">E-mail</label>
+                                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="inputPhone">Phone Number</label>
+                                    <input type="text" class="form-control" id="phone" placeholder="XXX-XXX-XXXX">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-10">
+                                    <label for="inputEmail">Favorite flavors of Trader Joe's mochi: </label>
+                                </div>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="mochi1">
+                                <label class="form-check-label" for="mochi1">
+                                    Mango
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="mochi2">
+                                <label class="form-check-label" for="mochi2">
+                                    Green Tea Matcha
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="mochi3">
+                                <label class="form-check-label" for="mochi3">
+                                    Strawberry
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="mochi4">
+                                <label class="form-check-label" for="mochi4">
+                                    Red Bean
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row no-gutters justify-content-center">
+            <div class="col-1">
+                <img src="./Helen learned HTML pt 3_files/e9f3dd965b9d26688f3ade4fbb04734e--star-wars-quotes-war-quotes.jpg" alt="..." class="img-thumbnail float-middle">
+            </div>
+            <div class="col-1">
+                <img src="./Helen learned HTML pt 3_files/giphy.gif" alt="..." class="img-thumbnail">
+                <img src="./Helen learned HTML pt 3_files/pie-in-face.jpg" alt="..." class="img-thumbnail">
+            </div>
+            <div class="col-1">
+                <img src="./Helen learned HTML pt 3_files/26JPSPRINKLES4-blog427.jpg" alt="..." class="img-thumbnail">
+            </div>
+        </div>
+        <h4 class="text-center bg-salmon text-light" ;="" style="background-color:salmon" )="">(Let's celebrate our team)</h4>
+        <div class="row no-gutters">
+            <div class="col-3">
+                <div class="card h-100">
+                    <div class="card-header bg-secondary text-white">January</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm text-left font-weight-bold">
+                                1.25
+                            </div>
+                            <div class="col-sm text-left" id="test">
+                                Faraz
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card h-100">
+                    <div class="card-header bg-secondary text-white">February</div>
+                    <div class="card-body"><div class="row"><div class="col-sm text-left font-weight-bold">
+                                    2.28
+                                </div>
+                                <div class="col-sm text-left" id="test">
+                                    Maria
+                                </div></div>
+                            
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card h-100">
+                    <div class="card-header bg-secondary text-white">March</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm text-left font-weight-bold">
+                                3.25
+                            </div>
+                            <div class="col-sm text-left">
+                                Ian
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card h-100">
+                    <div class="card-header bg-secondary text-white">April</div>
+                    <div class="card-body">
+					<div class="row">
+                            <div class="col-sm text-left font-weight-bold">
+                                4.12
+                            </div>
+                            <div class="col-sm text-left">
+                                Baby Aanya
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm text-left font-weight-bold">
+                                4.29
+                            </div>
+                            <div class="col-sm text-left">
+                                Roshan
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card h-100">
+                    <div class="card-header bg-secondary text-white">May</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm text-left font-weight-bold">
+                                5.7
+                            </div>
+                            <div class="col-sm text-left">
+                                Cameron
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm text-left font-weight-bold">
+                                5.15
+                            </div>
+                            <div class="col-sm text-left">
+                                Paul
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm text-left font-weight-bold">
+                                5.19
+                            </div>
+                            <div class="col-sm text-left">
+                                Helen
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm text-left font-weight-bold">
+                                5.28
+                            </div>
+                            <div class="col-sm text-left">
+                                Eric
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card h-100">
+                    <div class="card-header bg-secondary text-white">June</div>
+                    <div class="card-body"><div class="row"><div class="col-sm text-left font-weight-bold">
+                                    6.23
+                                </div>
+                                <div class="col-sm text-left">
+                                    Shahir
+                                </div></div>
+                            
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card h-100">
+                    <div class="card-header bg-secondary text-white">July</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm text-left font-weight-bold">
+                                7.9
+                            </div>
+                            <div class="col-sm text-left">
+                                Nidhi
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm text-left font-weight-bold">
+                                7.22
+                            </div>
+                            <div class="col-sm text-left">
+                                Kyle
+                            </div>
+                            
+                        </div><div class="row"><div class="col-sm text-left font-weight-bold">
+                                    7.28
+                                </div>
+                                <div class="col-sm text-left">
+                                    Leena
+                                </div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card h-100">
+                    <div class="card-header bg-secondary text-white">August</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm text-left font-weight-bold">
+                                8.18
+                            </div>
+                            <div class="col-sm text-left">
+                                Avinash
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm text-left font-weight-bold">
+                                8.22
+                            </div>
+                            <div class="col-sm text-left">
+                                Alex
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm text-left font-weight-bold">
+                                8.26
+                            </div>
+                            <div class="col-sm text-left">
+                                Rachel
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 mb-5">
+                <div class="card h-100">
+                    <div class="card-header bg-secondary text-white">September</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm text-left font-weight-bold">
+                                9.1
+                            </div>
+                            <div class="col-sm text-left">
+                                Kenna
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm text-left font-weight-bold">
+                                9.20
+                            </div>
+                            <div class="col-sm text-left">
+                                Kaushik
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 mb-5">
+                <div class="card h-100">
+                    <div class="card-header bg-secondary text-white">October</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm text-left font-weight-bold">
+                                10.17
+                            </div>
+                            <div class="col-sm text-left">
+                                Shishir
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 mb-5">
+                <div class="card h-100">
+                    <div class="card-header bg-secondary text-white">November</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm text-left font-weight-bold">
+                                11.22
+                            </div>
+                            <div class="col-sm text-left">
+                                Gayathri
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm text-left font-weight-bold">
+                                11.29
+                            </div>
+                            <div class="col-sm text-left">
+                                Mo
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 mb-5">
+                <div class="card h-100">
+                    <div class="card-header bg-secondary text-white">December</div>
+                    <div class="card-body">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+<div id="pocket-extension-root"><div class="pocket-egasyq"></div></div><div id="pocket-extension-styles"><style data-emotion="pocket"></style></div></body></html>
